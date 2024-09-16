@@ -1,0 +1,134 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #d4f1c5, #6ecb63); /* Soft green gradient */
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+h2 {
+    color: #ffffff;
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+form {
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #4a4a4a;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+input[type="text"], input[type="password"], textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 2px solid #6ecb63;
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: #f7fff3;
+    color: #4a4a4a;
+}
+
+textarea {
+    height: 120px;
+}
+
+button {
+    background-color: #6ecb63;
+    color: #ffffff;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #58a54f;
+}
+
+.error-message {
+    color: #ff6f61;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.success-message {
+    color: #6ecb63;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* Links for switching forms */
+button#showRegister, button#showLogin {
+    background-color: transparent;
+    color: #ffffff;
+    border: none;
+    text-decoration: underline;
+    cursor: pointer;
+    font-size: 14px;
+    margin-top: 15px;
+}
+
+button#showRegister:hover, button#showLogin:hover {
+    color: #dfffd0;
+}
+
+/* Messages list for Admin */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background-color: #ffffff;
+    margin-bottom: 10px;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    color: #333;
+}
+
+/* Container alignments */
+#loginContainer, #registerContainer, #memberApp, #adminApp {
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+#messageForm, #messageFormAdmin {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#messageSuccess {
+    font-size: 16px;
+}

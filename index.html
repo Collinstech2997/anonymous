@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anonymous Messaging Website</title>
+    <link rel="stylesheet" href="script.css">
+</head>
+<body>
+
+    <!-- Login Form -->
+    <div id="loginContainer">
+        <h2>Login</h2>
+        <form id="loginForm">
+            <label for="loginUsername">Username:</label>
+            <input type="text" id="loginUsername" required>
+            <label for="loginPassword">Password:</label>
+            <input type="password" id="loginPassword" required>
+            <button type="submit">Login</button>
+        </form>
+        <p id="loginError" class="error-message" style="display: none;"></p>
+        <button id="showRegister">Don't have an account? Register</button>
+    </div>
+
+    <!-- Register Form -->
+    <div id="registerContainer" style="display: none;">
+        <h2>Register</h2>
+        <form id="registerForm">
+            <label for="registerUsername">Username:</label>
+            <input type="text" id="registerUsername" required>
+            <label for="registerPassword">Password:</label>
+            <input type="password" id="registerPassword" required>
+            <button type="submit">Register</button>
+        </form>
+        <p id="registerError" class="error-message" style="display: none;"></p>
+        <button id="showLogin">Already have an account? Login</button>
+    </div>
+
+    <!-- Member App (Message Form) -->
+    <div id="memberApp" style="display: none;">
+        <h2>Send Anonymous Message</h2>
+        <form id="messageForm">
+            <textarea id="userMessage" placeholder="Enter your message..." required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+        <p id="messageSuccess" class="success-message" style="display: none;"></p>
+    </div>
+
+    <!-- Admin App (View Messages) -->
+    <div id="adminApp" style="display: none;">
+        <h2>Admin: View All Messages</h2>
+        <ul id="messageList"></ul>
+    </div>
+
+    <script src="Untitled-1.js"></script>
+</body>
+</html>
